@@ -1,0 +1,78 @@
+@import "variables.less";
+
+a{
+  text-decoration: none;
+}
+body{
+  font-family: "aleoregular";
+  background-color: white;
+}
+/* menu */
+.navbar{
+  margin-bottom: 0px;
+  border:none;
+  height: 110px;
+  z-index: 5000;
+  background-color: white;
+}
+.nav>li>a{
+  color: @light-black;
+  padding: 0;
+
+  &:hover{
+    background: transparent;
+  }
+}
+.nav li a{
+  margin-left: 50px;
+}
+#navbar{
+  margin-top: 5px;
+}
+.navbar .container{
+  margin-top: 35px;
+}
+
+
+/* */
+
+/* fake parallax */
+
+#parallax{
+  color: white;
+  min-height: @f-height;
+  border-bottom: @f-border-b;
+  z-index: 1000;
+  background: transparent;
+  
+
+  text-align: center;
+  .awesome-title{
+    font-size:90px;
+    font-family: aleobold;
+    margin-top: 300px;
+  }
+  span{
+    font-size: 16px;
+    position: relative;
+    display: inline-block;
+    margin-top: 10px;
+  }
+  span:before,
+  span:after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    border-top: 1px solid white;
+    top: 12px;
+    width: 40px;
+  }
+  span:before {
+    right: 100%;
+    margin-right: 25px;
+  }
+  span:after {
+    left: 100%;
+    margin-left: 25px;
+  }
+}

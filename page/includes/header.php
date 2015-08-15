@@ -29,6 +29,35 @@
         <script type="text/javascript" src="page/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="page/js/less.min.js"></script> 
         <script type="text/javascript" src="page/js/main.js"></script>
+        <script type="text/javascript" src="page/js/parallax.min.js"></script>
+
         
     </head>
     <body>
+    <section id="menu">
+        <header>
+            <nav class="navbar navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a href="index.php"><img alt="Logo" src="page/images/logo.png" /> </a>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse navbar-right">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#">Our Story</a></li>
+                            <li><a href="#">Menu</a></li>
+                            <li><a href="#">Reservations</a></li>
+                            <li><a href="#">News</a></li>
+                            <li><a href="#">Rviews</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </section>

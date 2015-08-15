@@ -1,6 +1,6 @@
 $(document).ready(function () {
-    
-           
+    $('#parallax').parallax({imageSrc: 'page/images/plate.png'});
+
     /* Smooth anchor 
 
     $('a[href^="#"]').on('click',function (e) {
