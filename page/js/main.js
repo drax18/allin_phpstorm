@@ -1,5 +1,9 @@
 $(document).ready(function () {
     $('#parallax').parallax({imageSrc: 'page/images/plate.png'});
+    $('#myCarousel').carousel({
+        interval: 5000
+    })
+
 
     /* Smooth anchor 
 

@@ -2,6 +2,7 @@
 
 @path-fonts:    '../fonts';
 
+
 .aleoregular
 {
 
@@ -62,10 +63,25 @@
 
   }
 }
+.manonegra{
+  @font-face {
+    font-family: 'manonegra';
+    src: url('@{path-fonts}/wcmanonegrabta-webfont.eot');
+    src: url('@{path-fonts}/wcmanonegrabta-webfont.eot?#iefix') format('embedded-opentype'),
+    url('@{path-fonts}/wcmanonegrabta-webfont.woff2') format('woff2'),
+    url('@{path-fonts}/wcmanonegrabta-webfont.woff') format('woff'),
+    url('@{path-fonts}/wcmanonegrabta-webfont.ttf') format('truetype'),
+    url('@{path-fonts}/wcmanonegrabta-webfont.svg#wc_mano_negra_btaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+  }
+}
+
 // Menu
 
 @light-black:#3b3b3b;
-
+@light-grey:#555555;
 // fake parallax
 
 @f-height:680px;

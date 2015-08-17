@@ -1,0 +1,15 @@
+.load-more .form-group:after{
+    display: block;
+    position: absolute;
+    content: '';
+    right: 0px;
+    top: 0px;
+    height: 34px;
+    width: 21px;
+    border-left: 1px solid #d7d5d5;
+    background: white;
+    z-index: 5;
+}
+.load-more .form-group .form-control{
+    padding-right: 25px;
+}

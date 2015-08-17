@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">        
 
-        <title>All in</title>       
+        <title>Resto</title>
 
         <!-- Bootstrap -->              
         <link href="page/css/bootstrap.css" rel="stylesheet">
@@ -19,10 +19,11 @@
         <!-- Media  -->
         <link href="page/less/media.less" rel="stylesheet/less">
 
-        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->        
-        <!--[if lt IE 9]>
-          <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if gte IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="page/css/ie9fix.css" />
         <![endif]-->
         <script type="text/javascript" src="page/js/jquery.js"></script>
         <script type="text/javascript" src="page/js/modernizr.js"></script>
@@ -55,7 +56,6 @@
                             <li><a href="#">News</a></li>
                             <li><a href="#">Rviews</a></li>
                         </ul>
-
                     </div>
                 </div>
             </nav>
