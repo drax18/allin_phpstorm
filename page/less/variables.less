@@ -1,88 +1,112 @@
-// Website fonts
-
-@path-fonts:    '../fonts';
-
-
-.aleoregular
-{
-
-  @font-face {
-    font-family: 'aleoregular';
-    src: url('@{path-fonts}/aleo-regular-webfont.eot');
-    src: url('@{path-fonts}/aleo-regular-webfont.eot?#iefix') format('embedded-opentype'),
-    url('@{path-fonts}/aleo-regular-webfont.woff2') format('woff2'),
-    url('@{path-fonts}/aleo-regular-webfont.woff') format('woff'),
-    url('@{path-fonts}/aleo-regular-webfont.ttf') format('truetype'),
-    url('@{path-fonts}/aleo-regular-webfont.svg#aleoregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-  }
+// Whole document
+*{
+  margin: 0;
+  padding: 0;
 }
-.aleobold{
-
-  @font-face {
-    font-family: 'aleobold';
-    src: url('@{path-fonts}/aleo-bold-webfont.eot');
-    src: url('@{path-fonts}/aleo-bold-webfont.eot?#iefix') format('embedded-opentype'),
-    url('@{path-fonts}/aleo-bold-webfont.woff2') format('woff2'),
-    url('@{path-fonts}/aleo-bold-webfont.woff') format('woff'),
-    url('@{path-fonts}/aleo-bold-webfont.ttf') format('truetype'),
-    url('@{path-fonts}/aleo-bold-webfont.svg#aleobold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-  }
+body {
+  .aleoregular;
+  background-color: @white;
 }
-.aleolightitalic{
-
-  @font-face {
-    font-family: 'aleolightitalic';
-    src: url('@{path-fonts}/aleo-lightitalic-webfont.eot');
-    src: url('@{path-fonts}/aleo-lightitalic-webfont.eot?#iefix') format('embedded-opentype'),
-    url('@{path-fonts}/aleo-lightitalic-webfont.woff2') format('woff2'),
-    url('@{path-fonts}/aleo-lightitalic-webfont.woff') format('woff'),
-    url('@{path-fonts}/aleo-lightitalic-webfont.ttf') format('truetype'),
-    url('@{path-fonts}/aleo-lightitalic-webfont.svg#aleolightitalic') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-  }
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
-.aleolight{
-
-  @font-face {
-    font-family: 'aleolight';
-    src: url('@{path-fonts}/aleo-light-webfont.eot');
-    src: url('@{path-fonts}/aleo-light-webfont.eot?#iefix') format('embedded-opentype'),
-    url('@{path-fonts}/aleo-light-webfont.woff2') format('woff2'),
-    url('@{path-fonts}/aleo-light-webfont.woff') format('woff'),
-    url('@{path-fonts}/aleo-light-webfont.ttf') format('truetype'),
-    url('@{path-fonts}/aleo-light-webfont.svg#aleolight') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-  }
+select::-ms-expand {
+  display: none;
 }
-.manonegra{
-  @font-face {
-    font-family: 'manonegra';
-    src: url('@{path-fonts}/wcmanonegrabta-webfont.eot');
-    src: url('@{path-fonts}/wcmanonegrabta-webfont.eot?#iefix') format('embedded-opentype'),
-    url('@{path-fonts}/wcmanonegrabta-webfont.woff2') format('woff2'),
-    url('@{path-fonts}/wcmanonegrabta-webfont.woff') format('woff'),
-    url('@{path-fonts}/wcmanonegrabta-webfont.ttf') format('truetype'),
-    url('@{path-fonts}/wcmanonegrabta-webfont.svg#wc_mano_negra_btaregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-  }
+// Images url
+@images-url:"../images";
+// Title after
+.title-grey{
+  position: absolute;
+  margin-left: 20px;
+  content: '';
+  width: 200px;
+  height: 1px;
+  background-color: @title-grey;
+  margin-top: 16px;
 }
-
-// Menu
-
+// Colors
+@white:white;
 @light-black:#3b3b3b;
 @light-grey:#555555;
-// fake parallax
-
-@f-height:680px;
-@f-border-b: 5px solid #f34949;
+@lighter-grey:#b7b7b7;
+@lighter-grey2:#d7d5d5;
+@very-light-grey:#e3e1e1;
+@light-red:#f34949;
+@title-grey:#e5e3e3;
+@indicator-grey:#9b9b9b;
+@indicator-grey2:#dedede;
+// Website fonts
+@path-fonts:    '../fonts';
+@font-face {
+  font-family: 'aleoregular';
+  src: url('@{path-fonts}/aleo-regular-webfont.eot');
+  src: url('@{path-fonts}/aleo-regular-webfont.eot?#iefix') format('embedded-opentype'),
+  url('@{path-fonts}/aleo-regular-webfont.woff2') format('woff2'),
+  url('@{path-fonts}/aleo-regular-webfont.woff') format('woff'),
+  url('@{path-fonts}/aleo-regular-webfont.ttf') format('truetype'),
+  url('@{path-fonts}/aleo-regular-webfont.svg#aleoregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'aleobold';
+  src: url('@{path-fonts}/aleo-bold-webfont.eot');
+  src: url('@{path-fonts}/aleo-bold-webfont.eot?#iefix') format('embedded-opentype'),
+  url('@{path-fonts}/aleo-bold-webfont.woff2') format('woff2'),
+  url('@{path-fonts}/aleo-bold-webfont.woff') format('woff'),
+  url('@{path-fonts}/aleo-bold-webfont.ttf') format('truetype'),
+  url('@{path-fonts}/aleo-bold-webfont.svg#aleobold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'aleolightitalic';
+  src: url('@{path-fonts}/aleo-lightitalic-webfont.eot');
+  src: url('@{path-fonts}/aleo-lightitalic-webfont.eot?#iefix') format('embedded-opentype'),
+  url('@{path-fonts}/aleo-lightitalic-webfont.woff2') format('woff2'),
+  url('@{path-fonts}/aleo-lightitalic-webfont.woff') format('woff'),
+  url('@{path-fonts}/aleo-lightitalic-webfont.ttf') format('truetype'),
+  url('@{path-fonts}/aleo-lightitalic-webfont.svg#aleolightitalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'aleolight';
+  src: url('@{path-fonts}/aleo-light-webfont.eot');
+  src: url('@{path-fonts}/aleo-light-webfont.eot?#iefix') format('embedded-opentype'),
+  url('@{path-fonts}/aleo-light-webfont.woff2') format('woff2'),
+  url('@{path-fonts}/aleo-light-webfont.woff') format('woff'),
+  url('@{path-fonts}/aleo-light-webfont.ttf') format('truetype'),
+  url('@{path-fonts}/aleo-light-webfont.svg#aleolight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'manonegra';
+  src: url('@{path-fonts}/wcmanonegrabta-webfont.eot');
+  src: url('@{path-fonts}/wcmanonegrabta-webfont.eot?#iefix') format('embedded-opentype'),
+  url('@{path-fonts}/wcmanonegrabta-webfont.woff2') format('woff2'),
+  url('@{path-fonts}/wcmanonegrabta-webfont.woff') format('woff'),
+  url('@{path-fonts}/wcmanonegrabta-webfont.ttf') format('truetype'),
+  url('@{path-fonts}/wcmanonegrabta-webfont.svg#wc_mano_negra_btaregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.aleoregular{
+  font-family: 'aleoregular';
+}
+.aleobold{
+  font-family: 'aleobold';
+}
+.aleolightitalic{
+  font-family: 'aleolightitalic';
+}
+.aleolight{
+  font-family: 'aleolight';
+}
+.manonegra{
+  font-family: 'manonegra';
+}

@@ -1,0 +1,101 @@
+/* Large desktop */
+@media (max-width: 1199px) {
+    #parallax .awesome-title{
+        margin-top: 250px;
+    }
+    #featured-dishes .item > div{
+        margin-right: 3px;
+    }
+    #thegallery #links a{
+        margin-left: 0;
+    }
+    #thegallery #links .row div:last-child div a{
+        margin-left: 0;
+    }
+}
+/* Portrait tablet*/
+@media (max-width: 992px) {
+    #featured-dishes .item .row div > div{
+        width: 230px;
+        margin: 0 auto;
+    }
+    #featured-dishes .item .stars{
+        margin-bottom: 20px !important;
+    }
+    #bottom-section{
+        height: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    #bottom-section ul{
+        margin-bottom: 40px;
+    }
+    #bottom-section ul li, .bottom-logo, .copyright{
+        text-align: center;
+    }
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+    #parallax{
+        min-height: 480px;
+    }
+    #parallax .awesome-title{
+        margin-top: 200px;
+        font-size: 60px;
+    }
+    #parallax span{
+        margin-top: 0px;
+    }
+    #parallax span:before, #parallax span:after{
+        display: none;
+    }
+    .navbar{
+        height: auto;
+        min-height: 110px;
+        position: relative;
+    }
+    .navbar-header{
+        text-align: center;
+        padding-left: 55px;
+    }
+    .navbar-toggle{
+        border:2px solid #555555;
+        padding: 12px 10px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin-bottom: 0;
+        margin-top: 35px;
+    }
+    .navbar-toggle .icon-bar{
+        background-color:#555555;
+    }
+    #navbar ul li{
+        text-align: center;
+    }
+    #themenu .foods{
+        float:none;
+        max-width: 100%;
+    }
+    #thegallery #links img{
+        margin:0px auto 10px auto;
+    }
+}
+@media (max-width: 635px) {
+    #parallax .awesome-title{
+        margin-top: 150px;
+    }
+}
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    #featured-dishes .featured-dishes-title:after,#thegallery .thegallery-title:after{
+        width: 61px;
+    }
+}
+@media (max-width: 368px) {
+    #parallax .awesome-title{
+        margin-top: 100px;
+    }
+}
+
+
